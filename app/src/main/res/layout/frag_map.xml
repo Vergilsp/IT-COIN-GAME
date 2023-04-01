@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_margin="32dp"
+        android:id="@+id/materi_plata"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/materinskaia_plata"
+        app:layout_constraintEnd_toStartOf="@+id/processor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/video_karta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toTopOf="@id/blok_pit"
+        android:id="@+id/processor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/processor"
+        app:layout_constraintEnd_toStartOf="@+id/ram_pam"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/materi_plata"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toTopOf="@id/hard_disk"
+        android:id="@+id/ram_pam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/processor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_margin="32dp"
+        android:id="@+id/video_karta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/videokarta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/blok_pit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materi_plata" />
+
+    <ImageView
+        android:layout_margin="32dp"
+        android:id="@+id/blok_pit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/blok_pitania"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hard_disk"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/video_karta"
+        app:layout_constraintTop_toBottomOf="@id/processor" />
+
+    <ImageView
+        android:layout_margin="32dp"
+        android:id="@+id/hard_disk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/harddisk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/blok_pit"
+        app:layout_constraintTop_toBottomOf="@id/ram_pam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

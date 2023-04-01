@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/map">
+
+    <fragment
+        tools:layout="@layout/frag_map"
+        android:id="@+id/map"
+        android:name="com.example.it_coin_game.ui.window.Map"
+        android:label="Map" >
+        <action
+            android:id="@+id/action_map_to_deteil_fragment"
+            app:destination="@id/deteil_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deteil_fragment"
+        android:name="com.example.it_coin_game.ui.window.Deteil_fragment"
+        android:label="Deteil_fragment"
+        tools:layout="@layout/deteil_frag"/>
+</navigation>
