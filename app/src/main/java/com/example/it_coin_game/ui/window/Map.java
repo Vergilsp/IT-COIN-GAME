@@ -32,17 +32,46 @@ public class Map extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.videoKarta.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment));
+                {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("id", 6);
+                    Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment, bundle);
+                }
+        );
         binding.ramPam.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment));
+                {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("id", 5);
+                    Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment, bundle);
+                }
+        );
         binding.materiPlata.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment));
+                {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("id", 4);
+                    Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment, bundle);
+                }
+        );
         binding.hardDisk.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment));
+                {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("id", 3);
+                    Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment, bundle);
+                }
+        );
         binding.blokPit.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment));
-        binding.processor.setOnClickListener(v ->
-                Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment));
+                {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("id", 2);
+                    Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment, bundle);
+                }
+        );
+        binding.processor.setOnClickListener(v -> {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("id", 1);
+                    Navigation.findNavController(v).navigate(R.id.action_map_to_deteil_fragment, bundle);
+                }
+        );
     }
 
     @Override

@@ -31,6 +31,9 @@ public class Deteil_fragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        int id = getArguments().getInt("id");
+
+
     }
 
     @Override
